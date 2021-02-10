@@ -13,13 +13,13 @@ public class MultiMaxTest {
 
     @Test
     public void whenFirstMax() {
-        int result = MultiMax.max(5, 4, 2);
-        assertThat(result, is(5));
+        int result = MultiMax.max(10, 10, 2);
+        assertThat(result, is(10));
     }
 
     @Test
     public void whenThirdMax() {
-        int result = MultiMax.max(4, 1, 5);
+        int result = MultiMax.max(1, 5, 5);
         assertThat(result, is(5));
     }
 
