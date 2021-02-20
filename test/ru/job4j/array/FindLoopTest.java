@@ -31,4 +31,22 @@ public class FindLoopTest {
         int expect = 3;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenFind4Then1() {
+        int[] input = {5, 4, 3, 2};
+        int value = 4;
+        int result = FindLoop.indexOf(input, value, 1, 3);
+        int expect = 1;
+        assertThat(result, is(expect));
+    }
+
+    @Test
+    public void whenFind4ThenNo() {
+        int[] input = {5, 4, 3, 2};
+        int value = 5;
+        int result = FindLoop.indexOf(input, value, 1, 3);
+        int expect = -1;
+        assertThat(result, is(expect));
+    }
 }
